@@ -9,10 +9,10 @@
 
 ### Installation
 git clone or download
-irb session
+[irb session](https://github.com/olwend/bank_tech_test/blob/master/irb.text)
 
 ### Acceptance criteria
-Run ```cucumber``` on command-line to see acceptance tests.
+Run ```rspec``` on command-line to see acceptance tests.
 
 **Given** a client makes a deposit of 1000 on 10-01-2012
 **And** a deposit of 2000 on 13-01-2012
