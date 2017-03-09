@@ -9,10 +9,10 @@
 
 ### Installation
 git clone or download
-irb session
+[irb session](https://github.com/olwend/bank_tech_test/blob/master/irb.text)
 
 ### Acceptance criteria
-Run ```cucumber``` on command-line to see acceptance tests.
+Run ```rspec``` on command-line to see acceptance tests.
 
 **Given** a client makes a deposit of 1000 on 10-01-2012
 **And** a deposit of 2000 on 13-01-2012
@@ -26,7 +26,7 @@ date       || credit || debit   || balance
 13/01/2012 || 2000.00||         || 3000.00
 10/01/2012 || 1000.00||         || 1000.00
 ```
-![Domain](https://github.com/olwend/bank_tech_test/Bank.png)
+![Domain](https://github.com/olwend/bank_tech_test/blob/master/Bank.png)
 
 ### User Stories
 As a client
