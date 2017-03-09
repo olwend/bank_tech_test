@@ -26,7 +26,7 @@ date       || credit || debit   || balance
 13/01/2012 || 2000.00||         || 3000.00
 10/01/2012 || 1000.00||         || 1000.00
 ```
-![Domain](https://github.com/olwend/bank_tech_test/Bank.png)
+![Domain](https://github.com/olwend/bank_tech_test/blob/master/Bank.png)
 
 ### User Stories
 As a client
