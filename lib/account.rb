@@ -1,5 +1,5 @@
 require './lib/statement'
-require './lib/transactions'
+require './lib/transaction'
 
 class Account
 attr_reader :balance

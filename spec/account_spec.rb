@@ -1,5 +1,5 @@
 require_relative '../lib/account'
-require_relative '../lib/transactions'
+require_relative '../lib/transaction'
 
 describe Account do
 
@@ -9,28 +9,13 @@ describe Account do
     expect(subject.balance).to eq(1000)
   end
 
-  it "receives a deposit request" do
+  it "raises balance on deposit" do
     subject.deposit(200)
     expect(subject.balance).to be(1200)
   end
 
-  it "receives a withdrawal request" do
+  it "raises balance on withdrawal" do
     subject.withdrawal(200)
     expect(subject.balance).to be(800)
-  end
-
-  it "changes the account balance by amount of the transaction" do
-  end
-
-  it "adds the transaction to memory" do
-  end
-end
-
-describe Transactions do
-
-  it "stores user_id, date, credit, debit and balance" do
-  end
-
-  it "responds to messages from statement" do
   end
 end
