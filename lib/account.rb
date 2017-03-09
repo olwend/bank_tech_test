@@ -2,7 +2,7 @@ require './lib/statement'
 require './lib/transaction'
 
 class Account
-attr_reader :balance
+  attr_reader :balance
 
   def initialize
     @balance = 1000
@@ -22,5 +22,8 @@ attr_reader :balance
 
   def update(amount)
     @balance += amount
+  end
+
+  def add_trans_to_array
   end
 end
