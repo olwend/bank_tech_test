@@ -1,0 +1,27 @@
+
+Olwens-MBP:bank_tech_test DOE$ irb
+2.3.3 :001 > require './lib/statement'
+ => true
+2.3.3 :002 > require './lib/account'
+ => true
+2.3.3 :003 > require './lib/transaction'
+ => false
+2.3.3 :004 > require './lib/transaction'
+ => false
+2.3.3 :005 > stat = Statement.new
+ => #<Statement:0x007f926110b1c0 @transactions=[], @body="", @header="date       || credit || debit   || balance">
+2.3.3 :006 > trans1  = Transaction.new(-200,660)
+ => #<Transaction:0x007f9261841750 @date="09/03/2017", @amount=-200, @balance=660>
+2.3.3 :007 > trans21  = Transaction.new(300,660)
+ => #<Transaction:0x007f926180cdc0 @date="09/03/2017", @amount=300, @balance=660>
+2.3.3 :008 > trans2  = Transaction.new(500,960)
+ => #<Transaction:0x007f926107e180 @date="09/03/2017", @amount=500, @balance=960>
+2.3.3 :009 > stat.build_transactions(trans1)
+ => [#<Transaction:0x007f9261841750 @date="09/03/2017", @amount=-200, @balance=660>]
+2.3.3 :010 > stat.build_transactions(trans2)
+ => [#<Transaction:0x007f9261841750 @date="09/03/2017", @amount=-200, @balance=660>, #<Transaction:0x007f926107e180 @date="09/03/2017", @amount=500, @balance=960>]
+2.3.3 :011 > stat.build_transactions(trans21)
+ => [#<Transaction:0x007f9261841750 @date="09/03/2017", @amount=-200, @balance=660>, #<Transaction:0x007f926107e180 @date="09/03/2017", @amount=500, @balance=960>, #<Transaction:0x007f926180cdc0 @date="09/03/2017", @amount=300, @balance=660>]
+2.3.3 :012 > stat.print_statement
+ => "date       || credit || debit   || balance||09/03/2017   ||        ||      200||     660\n||09/03/2017   ||     500||         ||     960\n||09/03/2017   ||     300||         ||     660\n"
+2.3.3 :013 >
