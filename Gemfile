@@ -4,4 +4,5 @@ gem 'sinatra'
 gem 'rake'
 gem 'rspec'
 gem 'cucumber'
+gem 'capybara'
 gem 'coveralls', require: false
