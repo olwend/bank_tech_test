@@ -13,6 +13,7 @@ git clone or download
 
 ### Acceptance criteria
 Run ```rspec``` on command-line to see acceptance tests.
+```Coverage report generated for RSpec to /Users/DOE/Projects/Makers_Course/week10/bank_tech_test/coverage. 83 / 83 LOC (100.0%) covered.```
 
 **Given** a client makes a deposit of 1000 on 10-01-2012
 **And** a deposit of 2000 on 13-01-2012
